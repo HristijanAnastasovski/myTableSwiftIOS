@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62DCFB952312B82300283156 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFB942312B82300283156 /* AppDelegate.swift */; };
+		62DCFB9A2312B82300283156 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62DCFB982312B82300283156 /* Main.storyboard */; };
+		62DCFB9C2312B82500283156 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62DCFB9B2312B82500283156 /* Assets.xcassets */; };
+		62DCFB9F2312B82500283156 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62DCFB9D2312B82500283156 /* LaunchScreen.storyboard */; };
+		62DCFBAA2312B94200283156 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFBA92312B94200283156 /* CustomButton.swift */; };
+		62DCFBAC2312BA0500283156 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFBAB2312BA0500283156 /* SplashScreenViewController.swift */; };
+		62DCFBAE2312BC9700283156 /* TypeOfUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFBAD2312BC9700283156 /* TypeOfUserViewController.swift */; };
+		62DCFBB02312EAA200283156 /* CustomerUserLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFBAF2312EAA200283156 /* CustomerUserLoginViewController.swift */; };
+		62DCFBB22312EAC200283156 /* RestaurantUserLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFBB12312EAC200283156 /* RestaurantUserLoginViewController.swift */; };
+		62DCFBB423131F9400283156 /* RegisterRestaurantUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFBB323131F9400283156 /* RegisterRestaurantUserViewController.swift */; };
+		62DCFBB6231337BC00283156 /* RegisterRestaurantDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFBB5231337BC00283156 /* RegisterRestaurantDetailsViewController.swift */; };
+		62DCFBB82313538A00283156 /* RestaurantTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFBB72313538A00283156 /* RestaurantTabBarViewController.swift */; };
+		62DCFBBA231413E700283156 /* RestaurantUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFBB9231413E700283156 /* RestaurantUser.swift */; };
+		62DCFBBC23141B2900283156 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFBBB23141B2900283156 /* ErrorResponse.swift */; };
+		62DCFBBE2314314A00283156 /* RegisterRestaurantLogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFBBD2314314900283156 /* RegisterRestaurantLogoViewController.swift */; };
+		62DCFBC02314627E00283156 /* RestaurantMainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFBBF2314627E00283156 /* RestaurantMainMenuViewController.swift */; };
+		62DCFBC22314629100283156 /* RestaurantOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFBC12314629100283156 /* RestaurantOrdersViewController.swift */; };
+		62DCFBC4231462B000283156 /* RestaurantEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFBC3231462B000283156 /* RestaurantEditViewController.swift */; };
+		62DCFBC62314789D00283156 /* RestaurantMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFBC52314789D00283156 /* RestaurantMenuCollectionViewCell.swift */; };
+		62DCFBCB23147FAB00283156 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFBCA23147FAB00283156 /* MenuItem.swift */; };
+		62DCFBCD2314936900283156 /* NewRestaurantItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFBCC2314936900283156 /* NewRestaurantItemViewController.swift */; };
+		62DCFBCF231561E600283156 /* NewRestaurantItemPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFBCE231561E600283156 /* NewRestaurantItemPictureViewController.swift */; };
+		62DCFBD123156E1300283156 /* RestaurantItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFBD023156E1300283156 /* RestaurantItemDetailsViewController.swift */; };
+		62DCFBD3231595AB00283156 /* RestaurantItemEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFBD2231595AB00283156 /* RestaurantItemEditViewController.swift */; };
+		62DCFBD52315C84B00283156 /* RestaurantItemEditImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFBD42315C84B00283156 /* RestaurantItemEditImageViewController.swift */; };
+		62DCFBD72315E5DE00283156 /* RestaurantPasswordChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFBD62315E5DE00283156 /* RestaurantPasswordChangeViewController.swift */; };
+		62DCFBD92315E60D00283156 /* RestaurantEditInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFBD82315E60D00283156 /* RestaurantEditInfoViewController.swift */; };
+		62DCFBDB2315E62200283156 /* RestaurantEditLogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFBDA2315E62200283156 /* RestaurantEditLogoViewController.swift */; };
+		62DCFBDD2315EFEF00283156 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFBDC2315EFEF00283156 /* Toast.swift */; };
+		62DCFBDF2316E6F200283156 /* CustomerUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFBDE2316E6F200283156 /* CustomerUser.swift */; };
+		62DCFBE12316E88F00283156 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFBE02316E88F00283156 /* Order.swift */; };
+		62DCFBE32316EB9800283156 /* RestaurantOrderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFBE22316EB9800283156 /* RestaurantOrderCollectionViewCell.swift */; };
+		62DCFBE62317007300283156 /* OrderedItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFBE52317007300283156 /* OrderedItemsView.swift */; };
+		62DCFBE82317025C00283156 /* RestaurantOrderedItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFBE72317025C00283156 /* RestaurantOrderedItemsViewController.swift */; };
+		62DCFC0D231836C700283156 /* CustomerTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFC0C231836C700283156 /* CustomerTabBarViewController.swift */; };
+		62DCFC0F2318374700283156 /* CustomerRestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFC0E2318374700283156 /* CustomerRestaurantsViewController.swift */; };
+		62DCFC112318376100283156 /* CustomerCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFC102318376100283156 /* CustomerCartViewController.swift */; };
+		62DCFC132318378700283156 /* CustomerOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFC122318378700283156 /* CustomerOrdersViewController.swift */; };
+		62DCFC15231837A100283156 /* CustomerAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFC14231837A100283156 /* CustomerAccountViewController.swift */; };
+		62DCFC1723186E4B00283156 /* CustomerRestaurantsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFC1623186E4A00283156 /* CustomerRestaurantsCollectionViewCell.swift */; };
+		62DCFC192318754F00283156 /* CustomerRestaurantItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFC182318754F00283156 /* CustomerRestaurantItemsViewController.swift */; };
+		62DCFC1B23187D4400283156 /* CustomerRestaurantMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFC1A23187D4400283156 /* CustomerRestaurantMenuCollectionViewCell.swift */; };
+		62DCFC1D231881DA00283156 /* CustomerSelectedItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFC1C231881DA00283156 /* CustomerSelectedItemViewController.swift */; };
+		62DCFC1F231950EE00283156 /* OrderedMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFC1E231950EE00283156 /* OrderedMenuItem.swift */; };
+		62DCFC2123196CC900283156 /* CartItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFC2023196CC900283156 /* CartItemCollectionViewCell.swift */; };
+		62DCFC232319C2D300283156 /* CustomerCheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFC222319C2D300283156 /* CustomerCheckoutViewController.swift */; };
+		62DCFC25231C571200283156 /* CustomerEditInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFC24231C571200283156 /* CustomerEditInfoViewController.swift */; };
+		62DCFC27231C575000283156 /* CustomerChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFC26231C575000283156 /* CustomerChangePasswordViewController.swift */; };
+		62DCFC29231C77D500283156 /* RegisterCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DCFC28231C77D400283156 /* RegisterCustomerViewController.swift */; };
+		9F4DE946BD4801B404162AD8 /* Pods_MyTable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4BA812D46B89774666D4EA1 /* Pods_MyTable.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		479FD04212BF1C7BEAAE6334 /* Pods-MyTable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTable.debug.xcconfig"; path = "Target Support Files/Pods-MyTable/Pods-MyTable.debug.xcconfig"; sourceTree = "<group>"; };
+		62DCFB912312B82300283156 /* MyTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62DCFB942312B82300283156 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		62DCFB992312B82300283156 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		62DCFB9B2312B82500283156 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62DCFB9E2312B82500283156 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		62DCFBA02312B82500283156 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62DCFBA92312B94200283156 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		62DCFBAB2312BA0500283156 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		62DCFBAD2312BC9700283156 /* TypeOfUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfUserViewController.swift; sourceTree = "<group>"; };
+		62DCFBAF2312EAA200283156 /* CustomerUserLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerUserLoginViewController.swift; sourceTree = "<group>"; };
+		62DCFBB12312EAC200283156 /* RestaurantUserLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantUserLoginViewController.swift; sourceTree = "<group>"; };
+		62DCFBB323131F9400283156 /* RegisterRestaurantUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRestaurantUserViewController.swift; sourceTree = "<group>"; };
+		62DCFBB5231337BC00283156 /* RegisterRestaurantDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRestaurantDetailsViewController.swift; sourceTree = "<group>"; };
+		62DCFBB72313538A00283156 /* RestaurantTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTabBarViewController.swift; sourceTree = "<group>"; };
+		62DCFBB9231413E700283156 /* RestaurantUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantUser.swift; sourceTree = "<group>"; };
+		62DCFBBB23141B2900283156 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		62DCFBBD2314314900283156 /* RegisterRestaurantLogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRestaurantLogoViewController.swift; sourceTree = "<group>"; };
+		62DCFBBF2314627E00283156 /* RestaurantMainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMainMenuViewController.swift; sourceTree = "<group>"; };
+		62DCFBC12314629100283156 /* RestaurantOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantOrdersViewController.swift; sourceTree = "<group>"; };
+		62DCFBC3231462B000283156 /* RestaurantEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantEditViewController.swift; sourceTree = "<group>"; };
+		62DCFBC52314789D00283156 /* RestaurantMenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		62DCFBCA23147FAB00283156 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		62DCFBCC2314936900283156 /* NewRestaurantItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRestaurantItemViewController.swift; sourceTree = "<group>"; };
+		62DCFBCE231561E600283156 /* NewRestaurantItemPictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRestaurantItemPictureViewController.swift; sourceTree = "<group>"; };
+		62DCFBD023156E1300283156 /* RestaurantItemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantItemDetailsViewController.swift; sourceTree = "<group>"; };
+		62DCFBD2231595AB00283156 /* RestaurantItemEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantItemEditViewController.swift; sourceTree = "<group>"; };
+		62DCFBD42315C84B00283156 /* RestaurantItemEditImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantItemEditImageViewController.swift; sourceTree = "<group>"; };
+		62DCFBD62315E5DE00283156 /* RestaurantPasswordChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantPasswordChangeViewController.swift; sourceTree = "<group>"; };
+		62DCFBD82315E60D00283156 /* RestaurantEditInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantEditInfoViewController.swift; sourceTree = "<group>"; };
+		62DCFBDA2315E62200283156 /* RestaurantEditLogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantEditLogoViewController.swift; sourceTree = "<group>"; };
+		62DCFBDC2315EFEF00283156 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		62DCFBDE2316E6F200283156 /* CustomerUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerUser.swift; sourceTree = "<group>"; };
+		62DCFBE02316E88F00283156 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		62DCFBE22316EB9800283156 /* RestaurantOrderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantOrderCollectionViewCell.swift; sourceTree = "<group>"; };
+		62DCFBE52317007300283156 /* OrderedItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedItemsView.swift; sourceTree = "<group>"; };
+		62DCFBE72317025C00283156 /* RestaurantOrderedItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantOrderedItemsViewController.swift; sourceTree = "<group>"; };
+		62DCFC0C231836C700283156 /* CustomerTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerTabBarViewController.swift; sourceTree = "<group>"; };
+		62DCFC0E2318374700283156 /* CustomerRestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerRestaurantsViewController.swift; sourceTree = "<group>"; };
+		62DCFC102318376100283156 /* CustomerCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerCartViewController.swift; sourceTree = "<group>"; };
+		62DCFC122318378700283156 /* CustomerOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerOrdersViewController.swift; sourceTree = "<group>"; };
+		62DCFC14231837A100283156 /* CustomerAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerAccountViewController.swift; sourceTree = "<group>"; };
+		62DCFC1623186E4A00283156 /* CustomerRestaurantsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerRestaurantsCollectionViewCell.swift; sourceTree = "<group>"; };
+		62DCFC182318754F00283156 /* CustomerRestaurantItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerRestaurantItemsViewController.swift; sourceTree = "<group>"; };
+		62DCFC1A23187D4400283156 /* CustomerRestaurantMenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerRestaurantMenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		62DCFC1C231881DA00283156 /* CustomerSelectedItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerSelectedItemViewController.swift; sourceTree = "<group>"; };
+		62DCFC1E231950EE00283156 /* OrderedMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedMenuItem.swift; sourceTree = "<group>"; };
+		62DCFC2023196CC900283156 /* CartItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		62DCFC222319C2D300283156 /* CustomerCheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerCheckoutViewController.swift; sourceTree = "<group>"; };
+		62DCFC24231C571200283156 /* CustomerEditInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerEditInfoViewController.swift; sourceTree = "<group>"; };
+		62DCFC26231C575000283156 /* CustomerChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerChangePasswordViewController.swift; sourceTree = "<group>"; };
+		62DCFC28231C77D400283156 /* RegisterCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCustomerViewController.swift; sourceTree = "<group>"; };
+		7422EF7A9FB961D66580BDCD /* Pods-MyTable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTable.release.xcconfig"; path = "Target Support Files/Pods-MyTable/Pods-MyTable.release.xcconfig"; sourceTree = "<group>"; };
+		A4BA812D46B89774666D4EA1 /* Pods_MyTable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyTable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		62DCFB8E2312B82300283156 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F4DE946BD4801B404162AD8 /* Pods_MyTable.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3584E286E90C596FE8E3450B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4BA812D46B89774666D4EA1 /* Pods_MyTable.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62DCFB882312B82300283156 = {
+			isa = PBXGroup;
+			children = (
+				62DCFB932312B82300283156 /* MyTable */,
+				62DCFB922312B82300283156 /* Products */,
+				F147D5707062DFB977EAA263 /* Pods */,
+				3584E286E90C596FE8E3450B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		62DCFB922312B82300283156 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62DCFB912312B82300283156 /* MyTable.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62DCFB932312B82300283156 /* MyTable */ = {
+			isa = PBXGroup;
+			children = (
+				62DCFBC7231478B300283156 /* CollectionView cells */,
+				62DCFBA82312B91300283156 /* Custom classes */,
+				62DCFBA72312B90500283156 /* Models */,
+				62DCFBA62312B8F300283156 /* Controllers */,
+				62DCFB942312B82300283156 /* AppDelegate.swift */,
+				62DCFB982312B82300283156 /* Main.storyboard */,
+				62DCFB9B2312B82500283156 /* Assets.xcassets */,
+				62DCFB9D2312B82500283156 /* LaunchScreen.storyboard */,
+				62DCFBA02312B82500283156 /* Info.plist */,
+			);
+			path = MyTable;
+			sourceTree = "<group>";
+		};
+		62DCFBA62312B8F300283156 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				62DCFBAB2312BA0500283156 /* SplashScreenViewController.swift */,
+				62DCFBAD2312BC9700283156 /* TypeOfUserViewController.swift */,
+				62DCFBAF2312EAA200283156 /* CustomerUserLoginViewController.swift */,
+				62DCFBB12312EAC200283156 /* RestaurantUserLoginViewController.swift */,
+				62DCFBB323131F9400283156 /* RegisterRestaurantUserViewController.swift */,
+				62DCFBB5231337BC00283156 /* RegisterRestaurantDetailsViewController.swift */,
+				62DCFBB72313538A00283156 /* RestaurantTabBarViewController.swift */,
+				62DCFBBD2314314900283156 /* RegisterRestaurantLogoViewController.swift */,
+				62DCFBBF2314627E00283156 /* RestaurantMainMenuViewController.swift */,
+				62DCFBC12314629100283156 /* RestaurantOrdersViewController.swift */,
+				62DCFBC3231462B000283156 /* RestaurantEditViewController.swift */,
+				62DCFBCC2314936900283156 /* NewRestaurantItemViewController.swift */,
+				62DCFBCE231561E600283156 /* NewRestaurantItemPictureViewController.swift */,
+				62DCFBD023156E1300283156 /* RestaurantItemDetailsViewController.swift */,
+				62DCFBD2231595AB00283156 /* RestaurantItemEditViewController.swift */,
+				62DCFBD42315C84B00283156 /* RestaurantItemEditImageViewController.swift */,
+				62DCFBD62315E5DE00283156 /* RestaurantPasswordChangeViewController.swift */,
+				62DCFBD82315E60D00283156 /* RestaurantEditInfoViewController.swift */,
+				62DCFBDA2315E62200283156 /* RestaurantEditLogoViewController.swift */,
+				62DCFBE72317025C00283156 /* RestaurantOrderedItemsViewController.swift */,
+				62DCFC0C231836C700283156 /* CustomerTabBarViewController.swift */,
+				62DCFC0E2318374700283156 /* CustomerRestaurantsViewController.swift */,
+				62DCFC102318376100283156 /* CustomerCartViewController.swift */,
+				62DCFC122318378700283156 /* CustomerOrdersViewController.swift */,
+				62DCFC14231837A100283156 /* CustomerAccountViewController.swift */,
+				62DCFC182318754F00283156 /* CustomerRestaurantItemsViewController.swift */,
+				62DCFC1C231881DA00283156 /* CustomerSelectedItemViewController.swift */,
+				62DCFC222319C2D300283156 /* CustomerCheckoutViewController.swift */,
+				62DCFC24231C571200283156 /* CustomerEditInfoViewController.swift */,
+				62DCFC26231C575000283156 /* CustomerChangePasswordViewController.swift */,
+				62DCFC28231C77D400283156 /* RegisterCustomerViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		62DCFBA72312B90500283156 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				62DCFBB9231413E700283156 /* RestaurantUser.swift */,
+				62DCFBBB23141B2900283156 /* ErrorResponse.swift */,
+				62DCFBCA23147FAB00283156 /* MenuItem.swift */,
+				62DCFBDC2315EFEF00283156 /* Toast.swift */,
+				62DCFBDE2316E6F200283156 /* CustomerUser.swift */,
+				62DCFBE02316E88F00283156 /* Order.swift */,
+				62DCFBE52317007300283156 /* OrderedItemsView.swift */,
+				62DCFC1E231950EE00283156 /* OrderedMenuItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		62DCFBA82312B91300283156 /* Custom classes */ = {
+			isa = PBXGroup;
+			children = (
+				62DCFBA92312B94200283156 /* CustomButton.swift */,
+			);
+			path = "Custom classes";
+			sourceTree = "<group>";
+		};
+		62DCFBC7231478B300283156 /* CollectionView cells */ = {
+			isa = PBXGroup;
+			children = (
+				62DCFBC52314789D00283156 /* RestaurantMenuCollectionViewCell.swift */,
+				62DCFBE22316EB9800283156 /* RestaurantOrderCollectionViewCell.swift */,
+				62DCFC1623186E4A00283156 /* CustomerRestaurantsCollectionViewCell.swift */,
+				62DCFC1A23187D4400283156 /* CustomerRestaurantMenuCollectionViewCell.swift */,
+				62DCFC2023196CC900283156 /* CartItemCollectionViewCell.swift */,
+			);
+			path = "CollectionView cells";
+			sourceTree = "<group>";
+		};
+		F147D5707062DFB977EAA263 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				479FD04212BF1C7BEAAE6334 /* Pods-MyTable.debug.xcconfig */,
+				7422EF7A9FB961D66580BDCD /* Pods-MyTable.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		62DCFB902312B82300283156 /* MyTable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62DCFBA32312B82500283156 /* Build configuration list for PBXNativeTarget "MyTable" */;
+			buildPhases = (
+				97C83C05204D01C1A716E707 /* [CP] Check Pods Manifest.lock */,
+				62DCFB8D2312B82300283156 /* Sources */,
+				62DCFB8E2312B82300283156 /* Frameworks */,
+				62DCFB8F2312B82300283156 /* Resources */,
+				5296D7CBCD86A43D5C12553B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyTable;
+			productName = MyTable;
+			productReference = 62DCFB912312B82300283156 /* MyTable.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		62DCFB892312B82300283156 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Hristijan Anastasovski";
+				TargetAttributes = {
+					62DCFB902312B82300283156 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 62DCFB8C2312B82300283156 /* Build configuration list for PBXProject "MyTable" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 62DCFB882312B82300283156;
+			productRefGroup = 62DCFB922312B82300283156 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62DCFB902312B82300283156 /* MyTable */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62DCFB8F2312B82300283156 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62DCFB9F2312B82500283156 /* LaunchScreen.storyboard in Resources */,
+				62DCFB9C2312B82500283156 /* Assets.xcassets in Resources */,
+				62DCFB9A2312B82300283156 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5296D7CBCD86A43D5C12553B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyTable/Pods-MyTable-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyTable/Pods-MyTable-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97C83C05204D01C1A716E707 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyTable-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		62DCFB8D2312B82300283156 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62DCFC192318754F00283156 /* CustomerRestaurantItemsViewController.swift in Sources */,
+				62DCFC15231837A100283156 /* CustomerAccountViewController.swift in Sources */,
+				62DCFC112318376100283156 /* CustomerCartViewController.swift in Sources */,
+				62DCFBD72315E5DE00283156 /* RestaurantPasswordChangeViewController.swift in Sources */,
+				62DCFC1D231881DA00283156 /* CustomerSelectedItemViewController.swift in Sources */,
+				62DCFBD52315C84B00283156 /* RestaurantItemEditImageViewController.swift in Sources */,
+				62DCFC0D231836C700283156 /* CustomerTabBarViewController.swift in Sources */,
+				62DCFBD3231595AB00283156 /* RestaurantItemEditViewController.swift in Sources */,
+				62DCFBC22314629100283156 /* RestaurantOrdersViewController.swift in Sources */,
+				62DCFBC4231462B000283156 /* RestaurantEditViewController.swift in Sources */,
+				62DCFBCD2314936900283156 /* NewRestaurantItemViewController.swift in Sources */,
+				62DCFBE12316E88F00283156 /* Order.swift in Sources */,
+				62DCFBB423131F9400283156 /* RegisterRestaurantUserViewController.swift in Sources */,
+				62DCFBBA231413E700283156 /* RestaurantUser.swift in Sources */,
+				62DCFC232319C2D300283156 /* CustomerCheckoutViewController.swift in Sources */,
+				62DCFBE62317007300283156 /* OrderedItemsView.swift in Sources */,
+				62DCFBD92315E60D00283156 /* RestaurantEditInfoViewController.swift in Sources */,
+				62DCFC2123196CC900283156 /* CartItemCollectionViewCell.swift in Sources */,
+				62DCFBC02314627E00283156 /* RestaurantMainMenuViewController.swift in Sources */,
+				62DCFC132318378700283156 /* CustomerOrdersViewController.swift in Sources */,
+				62DCFB952312B82300283156 /* AppDelegate.swift in Sources */,
+				62DCFBC62314789D00283156 /* RestaurantMenuCollectionViewCell.swift in Sources */,
+				62DCFC0F2318374700283156 /* CustomerRestaurantsViewController.swift in Sources */,
+				62DCFBCF231561E600283156 /* NewRestaurantItemPictureViewController.swift in Sources */,
+				62DCFBAA2312B94200283156 /* CustomButton.swift in Sources */,
+				62DCFBB6231337BC00283156 /* RegisterRestaurantDetailsViewController.swift in Sources */,
+				62DCFBB82313538A00283156 /* RestaurantTabBarViewController.swift in Sources */,
+				62DCFBDD2315EFEF00283156 /* Toast.swift in Sources */,
+				62DCFBB22312EAC200283156 /* RestaurantUserLoginViewController.swift in Sources */,
+				62DCFBAE2312BC9700283156 /* TypeOfUserViewController.swift in Sources */,
+				62DCFBE82317025C00283156 /* RestaurantOrderedItemsViewController.swift in Sources */,
+				62DCFBBC23141B2900283156 /* ErrorResponse.swift in Sources */,
+				62DCFBAC2312BA0500283156 /* SplashScreenViewController.swift in Sources */,
+				62DCFC29231C77D500283156 /* RegisterCustomerViewController.swift in Sources */,
+				62DCFC1F231950EE00283156 /* OrderedMenuItem.swift in Sources */,
+				62DCFBCB23147FAB00283156 /* MenuItem.swift in Sources */,
+				62DCFBD123156E1300283156 /* RestaurantItemDetailsViewController.swift in Sources */,
+				62DCFBB02312EAA200283156 /* CustomerUserLoginViewController.swift in Sources */,
+				62DCFBDF2316E6F200283156 /* CustomerUser.swift in Sources */,
+				62DCFC25231C571200283156 /* CustomerEditInfoViewController.swift in Sources */,
+				62DCFBDB2315E62200283156 /* RestaurantEditLogoViewController.swift in Sources */,
+				62DCFBBE2314314A00283156 /* RegisterRestaurantLogoViewController.swift in Sources */,
+				62DCFC27231C575000283156 /* CustomerChangePasswordViewController.swift in Sources */,
+				62DCFBE32316EB9800283156 /* RestaurantOrderCollectionViewCell.swift in Sources */,
+				62DCFC1723186E4B00283156 /* CustomerRestaurantsCollectionViewCell.swift in Sources */,
+				62DCFC1B23187D4400283156 /* CustomerRestaurantMenuCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		62DCFB982312B82300283156 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62DCFB992312B82300283156 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		62DCFB9D2312B82500283156 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62DCFB9E2312B82500283156 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		62DCFBA12312B82500283156 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		62DCFBA22312B82500283156 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62DCFBA42312B82500283156 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 479FD04212BF1C7BEAAE6334 /* Pods-MyTable.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JC9J88B6L2;
+				INFOPLIST_FILE = MyTable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hristijan.MyTable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		62DCFBA52312B82500283156 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7422EF7A9FB961D66580BDCD /* Pods-MyTable.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JC9J88B6L2;
+				INFOPLIST_FILE = MyTable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hristijan.MyTable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		62DCFB8C2312B82300283156 /* Build configuration list for PBXProject "MyTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62DCFBA12312B82500283156 /* Debug */,
+				62DCFBA22312B82500283156 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62DCFBA32312B82500283156 /* Build configuration list for PBXNativeTarget "MyTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62DCFBA42312B82500283156 /* Debug */,
+				62DCFBA52312B82500283156 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 62DCFB892312B82300283156 /* Project object */;
+}
