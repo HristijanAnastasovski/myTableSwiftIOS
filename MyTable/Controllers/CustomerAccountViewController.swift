@@ -68,6 +68,7 @@ class CustomerAccountViewController: UIViewController {
     @IBAction func onSignOutBtnClick (_ sender: Any){
         let userDefaults = UserDefaults.standard
         userDefaults.set(nil, forKey: "customerUser")
+        userDefaults.set(nil, forKey: "mycart")
         userDefaults.synchronize()
         performSegue(withIdentifier: "segueCustomerSignOut", sender: self)
     }

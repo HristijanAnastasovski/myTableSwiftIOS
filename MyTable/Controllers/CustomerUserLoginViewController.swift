@@ -136,6 +136,9 @@ class CustomerUserLoginViewController: UIViewController, UITextFieldDelegate {
             do{
                 let encodedData: Data = try NSKeyedArchiver.archivedData(withRootObject: customerUser!, requiringSecureCoding: false)
                 userDefaults.set(encodedData, forKey: "customerUser")
+                
+                userDefaults.set(nil, forKey: "mycart")
+                
                 userDefaults.synchronize()
             }catch let error {
                 print(error)

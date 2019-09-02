@@ -15,6 +15,8 @@ class RestaurantOrdersViewController: UIViewController, UICollectionViewDelegate
     var orders = [Order]()
     var selectedOrder : Order!
     
+    @IBOutlet weak var emptyOrderListLbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(red: 0.9, green: 0.1, blue: 0.3, alpha: 1)
@@ -25,6 +27,8 @@ class RestaurantOrdersViewController: UIViewController, UICollectionViewDelegate
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(false)
+        orders.removeAll()
+        emptyOrderListLbl.isHidden = false
         initializeOrders()
         
     }
@@ -89,8 +93,11 @@ class RestaurantOrdersViewController: UIViewController, UICollectionViewDelegate
                 let loadedOrders = try! JSONDecoder().decode([Order].self, from: response.data!)
                 
                 DispatchQueue.main.async{
-                    self.orders.removeAll()
                     self.orders.append(contentsOf: loadedOrders.reversed())
+                    if(self.orders.count > 0){
+                        self.emptyOrderListLbl.isHidden = true
+                        
+                    }
                     self.ordersCollectionView.reloadData()
                 }
                 

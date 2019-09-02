@@ -16,13 +16,22 @@ class CustomerRestaurantsViewController: UIViewController, UICollectionViewDeleg
    
     @IBOutlet weak var restaurantsCollectionView: UICollectionView!
     
+    @IBOutlet weak var noRestaurantsAvailableLbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(red: 0.9, green: 0.1, blue: 0.3, alpha: 1)
         restaurantsCollectionView.delegate = self
         restaurantsCollectionView.dataSource = self
-        initializeRestaurants()
+        //initializeRestaurants()
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        restaurants.removeAll()
+        noRestaurantsAvailableLbl.isHidden = false
+        initializeRestaurants()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -64,9 +73,12 @@ class CustomerRestaurantsViewController: UIViewController, UICollectionViewDeleg
                 let restaurantsList = try! JSONDecoder().decode([RestaurantUser].self, from: response.data!)
                 
                 DispatchQueue.main.async{
-                    self.restaurants.removeAll()
                     self.restaurants.append(contentsOf: restaurantsList)
+                    if(self.restaurants.count > 0){
+                        self.noRestaurantsAvailableLbl.isHidden = true
+                    }
                     self.restaurantsCollectionView.reloadData()
+                    
                 }
                 
                 

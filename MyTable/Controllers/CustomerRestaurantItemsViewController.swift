@@ -17,11 +17,16 @@ class CustomerRestaurantItemsViewController: UIViewController, UICollectionViewD
     
     @IBOutlet weak var restaurantItemsCollectionView: UICollectionView!
     
+    @IBOutlet weak var noItemsInRestaurantLbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = selectedRestaurant.restaurantName
         restaurantItemsCollectionView.delegate = self
         restaurantItemsCollectionView.dataSource = self
+        
+        restaurantItems.removeAll()
+        noItemsInRestaurantLbl.isHidden = false
         loadMenu()
 
         // Do any additional setup after loading the view.
@@ -78,9 +83,12 @@ class CustomerRestaurantItemsViewController: UIViewController, UICollectionViewD
                 let menuItems = try! JSONDecoder().decode([MenuItem].self, from: response.data!)
                 
                 DispatchQueue.main.async{
-                    self.restaurantItems.removeAll()
                     self.restaurantItems.append(contentsOf: menuItems)
+                    if(self.restaurantItems.count > 0){
+                        self.noItemsInRestaurantLbl.isHidden = true
+                    }
                     self.restaurantItemsCollectionView.reloadData()
+                    
                 }
                 
                 

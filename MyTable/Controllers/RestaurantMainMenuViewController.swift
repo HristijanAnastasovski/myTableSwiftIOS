@@ -17,6 +17,8 @@ class RestaurantMainMenuViewController: UIViewController, UICollectionViewDelega
     
     var selectedMenuItem: MenuItem!
     
+    @IBOutlet weak var emptyMenu: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(red: 0.9, green: 0.1, blue: 0.3, alpha: 1)
@@ -31,6 +33,9 @@ class RestaurantMainMenuViewController: UIViewController, UICollectionViewDelega
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(false)
+        
+        menu.removeAll()
+        emptyMenu.isHidden = false
         initializeMenu()
 
     }
@@ -107,9 +112,11 @@ class RestaurantMainMenuViewController: UIViewController, UICollectionViewDelega
                 let menuItems = try! JSONDecoder().decode([MenuItem].self, from: response.data!)
                 
                 DispatchQueue.main.async{
-                    self.menu.removeAll()
                     self.menu.append(contentsOf: menuItems)
-                    self.mainMenuCollectionView.reloadData()
+                    if(self.menu.count > 0){
+                        self.emptyMenu.isHidden = true
+                    }
+                     self.mainMenuCollectionView.reloadData()
                 }
                 
                 
