@@ -63,7 +63,7 @@ class CustomerOrderedItemsViewController: UIViewController {
         }
     }
     
-    @IBAction func onCheckLocationBtnClick(_ sender: Any){
+  /*  @IBAction func onCheckLocationBtnClick(_ sender: Any){
         performSegue(withIdentifier: "segueOrderToMap", sender: self)
     }
     
@@ -73,6 +73,7 @@ class CustomerOrderedItemsViewController: UIViewController {
             mapViewController.restaurant = self.restaurant
         }
     }
+ */
     
 
     /*
