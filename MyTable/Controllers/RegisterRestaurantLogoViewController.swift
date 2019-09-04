@@ -163,7 +163,12 @@ class RegisterRestaurantLogoViewController: UIViewController,UITextFieldDelegate
 }
 
 extension UIImageView {
-    func downloaded(from url: URL, contentMode mode: UIView.ContentMode = .scaleAspectFill) {  // for swift 4.2 syntax just use ===> mode: UIView.ContentMode
+    static let cache = NSCache<NSString, UIImage>()
+    
+    func downloaded(from url: URL, contentMode mode: UIView.ContentMode = .scaleAspectFill) {  // for
+        
+        
+        
         contentMode = mode
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard
@@ -173,13 +178,24 @@ extension UIImageView {
                 let image = UIImage(data: data)
                 else { return }
             DispatchQueue.main.async() {
+                UIImageView.cache.setObject(image, forKey: url.absoluteString as NSString)
                 self.image = image
+                print("Image downloaded")
             
             }
             }.resume()
     }
     func downloaded(from link: String, contentMode mode: UIView.ContentMode = .scaleAspectFill) {  // for swift 4.2 syntax just use ===> mode: UIView.ContentMode
+        
+        let image = UIImageView.cache.object(forKey: link as NSString)
+        if(image != nil){
+            DispatchQueue.main.async() {
+                self.image = image
+                print("Image loaded from cache")
+                
+            }
+        }else{
         guard let url = URL(string: link) else { return }
-        downloaded(from: url, contentMode: mode)
+            downloaded(from: url, contentMode: mode)}
     }
 }

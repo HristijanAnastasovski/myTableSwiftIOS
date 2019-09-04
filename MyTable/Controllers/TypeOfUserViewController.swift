@@ -12,6 +12,8 @@ class TypeOfUserViewController: UIViewController {
 
     @IBOutlet weak var logoLbl: UILabel!
     
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(red: 0.9, green: 0.1, blue: 0.3, alpha: 1)
@@ -20,6 +22,8 @@ class TypeOfUserViewController: UIViewController {
         //userDefaults.set(nil, forKey: "customerUser")
         //userDefaults.synchronize()
         renderLogo()
+        
+        
 
         // Do any additional setup after loading the view.
     }
